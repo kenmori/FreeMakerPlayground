@@ -4,3 +4,4 @@
 		<li> ${item} </li>
 	</#list>
 </ul>
+<#assign fafa = "faffa">

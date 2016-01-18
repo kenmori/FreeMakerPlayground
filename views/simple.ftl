@@ -1,5 +1,3 @@
-view sample
-
 <h1>${name}</h1>
 
 <hr/>
@@ -10,3 +8,5 @@ view sample
 <#else>
   <div>${fafa}</div>
 </#if>
+
+<#include "/export.ftl" />
