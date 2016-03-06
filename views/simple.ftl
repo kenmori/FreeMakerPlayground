@@ -10,3 +10,12 @@
 </#if>
 
 <#include "/export.ftl" />
+
+
+
+<h2>1603</h2>
+
+
+<div>
+  ${"kyounokanji"?keep_after("ka")}
+</div>
