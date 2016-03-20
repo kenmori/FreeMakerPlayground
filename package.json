@@ -12,7 +12,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-freemarker": "*",
-    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-watch": "~1.0.0",
     "grunt-contrib-connect": "~1.0.0",
     "grunt-contrib-clean": "~1.0.0"
   }
