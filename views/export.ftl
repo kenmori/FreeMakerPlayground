@@ -1,4 +1,5 @@
-<#assign lists = ['faf', 'ffefe', 'iii'] />
+
+<#assign lists = ['kuki', 'kawasaki', 'ikejiriohhashi'] />
 <#list lists as list>
-  ${list}
+  <p>${list?counter} : ${list}
 </#list>
