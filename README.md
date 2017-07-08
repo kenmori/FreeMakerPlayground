@@ -6,6 +6,12 @@ Using sample for grunt-freemarker plugin
 ## Run
 
 ```
+npm i -g grunt
+```
+
+then
+
+```
 grunt server
 ```
 

@@ -2,55 +2,5 @@
 
 
 
-Error parsing included template export.ftl
-Error on line 4, column 13, in template export.ftl
-Found counter, expecting one of:  is_directive,  parent,  js_string,  j_string,  uncap_first,  is_transform,  number,  is_hash,  trim,  children,  has_content,  iso_ms,  xml,  iso_utc,  byte,  double,  left_pad,  json_string,  matches,  capitalize,  number_to_datetime,  contains,  size,  iso_local_h_nz,  iso_utc_ms,  iso_local_m_nz,  is_collection,  long,  default,  iso_utc_h_nz,  iso_local_ms,  is_boolean,  last_index_of,  c,  iso_utc_m_nz,  is_macro,  rtf,  iso_utc_nz,  upper_case,  node_name,  reverse,  cap_first,  url,  is_hash_ex,  iso_nz,  is_enumerable,  exists,  number_to_date,  first,  iso_local,  date,  iso,  replace,  float,  right_pad,  datetime,  node_type,  split,  iso_ms_nz,  number_to_time,  is_sequence,  iso_utc_m,  html,  ancestors,  iso_utc_h,  iso_local_ms_nz,  new,  last,  sort,  eval,  lower_case,  web_safe,  is_date,  is_string,  iso_local_nz,  word_list,  seq_last_index_of,  node_namespace,  string,  keys,  iso_m_nz,  values,  seq_index_of,  chunk,  sort_by,  iso_m,  starts_with,  substring,  index_of,  iso_h,  root,  floor,  iso_h_nz,  ceiling,  if_exists,  chop_linebreak,  iso_local_h,  length,  is_indexable,  groups,  is_node,  iso_local_m,  int,  iso_utc_ms_nz,  xhtml,  ends_with,  round,  interpret,  is_method,  namespace,  short,  seq_contains,  time,  is_number in export.ftl
-The problematic instruction:
-----------
-==> include '/export.ftl' [on line 4, column 1 in simple.ftl]
-----------
 
-Java backtrace for programmers:
-----------
-freemarker.template.TemplateException: Error parsing included template export.ftl
-Error on line 4, column 13, in template export.ftl
-Found counter, expecting one of:  is_directive,  parent,  js_string,  j_string,  uncap_first,  is_transform,  number,  is_hash,  trim,  children,  has_content,  iso_ms,  xml,  iso_utc,  byte,  double,  left_pad,  json_string,  matches,  capitalize,  number_to_datetime,  contains,  size,  iso_local_h_nz,  iso_utc_ms,  iso_local_m_nz,  is_collection,  long,  default,  iso_utc_h_nz,  iso_local_ms,  is_boolean,  last_index_of,  c,  iso_utc_m_nz,  is_macro,  rtf,  iso_utc_nz,  upper_case,  node_name,  reverse,  cap_first,  url,  is_hash_ex,  iso_nz,  is_enumerable,  exists,  number_to_date,  first,  iso_local,  date,  iso,  replace,  float,  right_pad,  datetime,  node_type,  split,  iso_ms_nz,  number_to_time,  is_sequence,  iso_utc_m,  html,  ancestors,  iso_utc_h,  iso_local_ms_nz,  new,  last,  sort,  eval,  lower_case,  web_safe,  is_date,  is_string,  iso_local_nz,  word_list,  seq_last_index_of,  node_namespace,  string,  keys,  iso_m_nz,  values,  seq_index_of,  chunk,  sort_by,  iso_m,  starts_with,  substring,  index_of,  iso_h,  root,  floor,  iso_h_nz,  ceiling,  if_exists,  chop_linebreak,  iso_local_h,  length,  is_indexable,  groups,  is_node,  iso_local_m,  int,  iso_utc_ms_nz,  xhtml,  ends_with,  round,  interpret,  is_method,  namespace,  short,  seq_contains,  time,  is_number in export.ftl
-	at freemarker.core.Include.accept(Include.java:162)
-	at freemarker.core.Environment.visit(Environment.java:221)
-	at freemarker.core.MixedContent.accept(MixedContent.java:92)
-	at freemarker.core.Environment.visit(Environment.java:221)
-	at freemarker.core.Environment.process(Environment.java:199)
-	at freemarker.template.Template.process(Template.java:259)
-	at cn.ijser.util.FreeMarkerUtil.processTemplate(FreeMarkerUtil.java:47)
-	at cn.ijser.app.FMtoll.main(FMtoll.java:36)
-Caused by: freemarker.core.ParseException: Error on line 4, column 13, in template export.ftl
-Found counter, expecting one of:  is_directive,  parent,  js_string,  j_string,  uncap_first,  is_transform,  number,  is_hash,  trim,  children,  has_content,  iso_ms,  xml,  iso_utc,  byte,  double,  left_pad,  json_string,  matches,  capitalize,  number_to_datetime,  contains,  size,  iso_local_h_nz,  iso_utc_ms,  iso_local_m_nz,  is_collection,  long,  default,  iso_utc_h_nz,  iso_local_ms,  is_boolean,  last_index_of,  c,  iso_utc_m_nz,  is_macro,  rtf,  iso_utc_nz,  upper_case,  node_name,  reverse,  cap_first,  url,  is_hash_ex,  iso_nz,  is_enumerable,  exists,  number_to_date,  first,  iso_local,  date,  iso,  replace,  float,  right_pad,  datetime,  node_type,  split,  iso_ms_nz,  number_to_time,  is_sequence,  iso_utc_m,  html,  ancestors,  iso_utc_h,  iso_local_ms_nz,  new,  last,  sort,  eval,  lower_case,  web_safe,  is_date,  is_string,  iso_local_nz,  word_list,  seq_last_index_of,  node_namespace,  string,  keys,  iso_m_nz,  values,  seq_index_of,  chunk,  sort_by,  iso_m,  starts_with,  substring,  index_of,  iso_h,  root,  floor,  iso_h_nz,  ceiling,  if_exists,  chop_linebreak,  iso_local_h,  length,  is_indexable,  groups,  is_node,  iso_local_m,  int,  iso_utc_ms_nz,  xhtml,  ends_with,  round,  interpret,  is_method,  namespace,  short,  seq_contains,  time,  is_number in export.ftl
-	at freemarker.core.BuiltIn.newBuiltIn(BuiltIn.java:255)
-	at freemarker.core.FMParser.BuiltIn(FMParser.java:795)
-	at freemarker.core.FMParser.AddSubExpression(FMParser.java:731)
-	at freemarker.core.FMParser.PrimaryExpression(FMParser.java:278)
-	at freemarker.core.FMParser.UnaryExpression(FMParser.java:324)
-	at freemarker.core.FMParser.MultiplicativeExpression(FMParser.java:440)
-	at freemarker.core.FMParser.AdditiveExpression(FMParser.java:390)
-	at freemarker.core.FMParser.RangeExpression(FMParser.java:561)
-	at freemarker.core.FMParser.RelationalExpression(FMParser.java:516)
-	at freemarker.core.FMParser.EqualityExpression(FMParser.java:481)
-	at freemarker.core.FMParser.AndExpression(FMParser.java:590)
-	at freemarker.core.FMParser.OrExpression(FMParser.java:613)
-	at freemarker.core.FMParser.Expression(FMParser.java:226)
-	at freemarker.core.FMParser.StringOutput(FMParser.java:1066)
-	at freemarker.core.FMParser.Content(FMParser.java:2580)
-	at freemarker.core.FMParser.OptionalBlock(FMParser.java:2791)
-	at freemarker.core.FMParser.List(FMParser.java:1262)
-	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:2380)
-	at freemarker.core.FMParser.Content(FMParser.java:2623)
-	at freemarker.core.FMParser.OptionalBlock(FMParser.java:2791)
-	at freemarker.core.FMParser.Root(FMParser.java:2963)
-	at freemarker.template.Template.<init>(Template.java:171)
-	at freemarker.cache.TemplateCache.loadTemplate(TemplateCache.java:447)
-	at freemarker.cache.TemplateCache.getTemplate(TemplateCache.java:360)
-	at freemarker.cache.TemplateCache.getTemplate(TemplateCache.java:235)
-	at freemarker.template.Configuration.getTemplate(Configuration.java:578)
-	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1490)
-	at freemarker.core.Include.accept(Include.java:157)
-	... 7 more
+
