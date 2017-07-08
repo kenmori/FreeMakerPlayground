@@ -19,10 +19,10 @@
     </#if>
 </#function>
 
-
+${.version}
 <#list returnVeiwListOrder() as list>
     <#switch list>
-        <#case 'a'><@m.content1 isMember/><#break >
+        <#case 'a'><@m.content1 isMember><#if isMember>fs20</#if></@m.content1><#break >
         <#case 'b'><@m.content2 isMember/><#break >
         <#case 'c'><@m.content3 isMember/><#break >
         <#case 'd'><@m.content4 isMember/><#break >

@@ -1,5 +1,5 @@
 <#macro content1 isMember>
-    <div class='<#if isMember == true>fs20</#if>'>content1</div>
+    <div class="<#nested>">content1</div>
 </#macro>
 
 <#macro content2 isMember>
