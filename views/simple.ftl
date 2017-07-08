@@ -23,10 +23,21 @@ ${.version}
 <#list returnVeiwListOrder() as list>
     <#switch list>
         <#case 'a'><@m.content1 isMember><#if isMember>fs20</#if></@m.content1><#break >
-        <#case 'b'><@m.content2 isMember/><#break >
-        <#case 'c'><@m.content3 isMember/><#break >
-        <#case 'd'><@m.content4 isMember/><#break >
+        <#case 'b'>
+            <@m.content2 isMember; x, y, z>
+                <span>${x} ${y} ${z}</span>
+            </@m.content2>
+        <#break>
+        <#case 'c'><@m.content3 isMember/><#break>
+        <#case 'd'><@m.content4 isMember/><#break>
     </#switch>
 </#list>
+
+
+<@m.roop; x><li class="${x!''}">fafa</li></@m.roop>
+
+<@m.roop2 count=3; x, last>
+    <li class="${x!''}">fafa <#if last>last</#if></li>
+</@m.roop2>
 
 <#include '/export.ftl'>
