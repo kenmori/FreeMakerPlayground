@@ -19,19 +19,19 @@
     </#if>
 </#function>
 
-${.version}
-<#list returnVeiwListOrder() as list>
-    <#switch list>
-        <#case 'a'><@m.content1 isMember><#if isMember>fs20</#if></@m.content1><#break >
-        <#case 'b'>
-            <@m.content2 isMember; x, y, z>
-                <span>${x} ${y} ${z}</span>
-            </@m.content2>
-        <#break>
-        <#case 'c'><@m.content3 isMember/><#break>
-        <#case 'd'><@m.content4 isMember/><#break>
-    </#switch>
-</#list>
+<#--${.version}-->
+<#--<#list returnVeiwListOrder() as list>-->
+    <#--<#switch list>-->
+        <#--<#case 'a'><@m.content1 isMember><#if isMember>fs20</#if></@m.content1><#break >-->
+        <#--<#case 'b'>-->
+            <#--<@m.content2 isMember; x, y, z>-->
+                <#--<span>${x} ${y} ${z}</span>-->
+            <#--</@m.content2>-->
+        <#--<#break>-->
+        <#--<#case 'c'><@m.content3 isMember/><#break>-->
+        <#--<#case 'd'><@m.content4 isMember/><#break>-->
+    <#--</#switch>-->
+<#--</#list>-->
 
 
 <@m.roop; x><li class="${x!''}">fafa</li></@m.roop>
@@ -41,3 +41,8 @@ ${.version}
 </@m.roop2>
 
 <#include '/export.ftl'>
+
+
+<@m.repeatNested 4; x, half, isLast>
+    ${x}, ${half}, <#if isLast>last!!!</#if>
+</@m.repeatNested>
