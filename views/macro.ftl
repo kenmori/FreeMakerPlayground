@@ -6,9 +6,9 @@
 <div>content2 <#nested "fafa" 2 90></div>
 </#macro>
 
-<#macro content3 isMember>
-<div>content3</div>
-</#macro>
+<#--<#macro content3 isMember>-->
+<#--<div>content3</div>-->
+<#--</#macro>-->
 
 
 <#macro content4 isMember>
@@ -33,4 +33,10 @@
         <#nested x, x==count>
     </#list>
 </ul>
+</#macro>
+
+<#macro repeatNested count>
+    <#list 1..count as x>
+        <#nested x, x/2, x==count />
+    </#list>
 </#macro>
